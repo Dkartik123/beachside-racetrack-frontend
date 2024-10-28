@@ -1,15 +1,34 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="ru">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <title>Beachside Racetrack</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-image: url('https://images.pexels.com/photos/8766268/pexels-photo-8766268.jpeg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        min-height: 100vh;
+      }
+      #app {
+        font-family: Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        color: #2c3e50;
+        background-color: rgba(255, 255, 255, 0.8);
+        min-height: 100vh;
+      }
+    </style>
   </head>
   <body>
     <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+      <strong>К сожалению, это приложение не работает без включенного JavaScript. Пожалуйста, включите его для продолжения.</strong>
     </noscript>
     <div id="app"></div>
     <!-- built files will be auto injected -->
